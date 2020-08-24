@@ -171,16 +171,11 @@ if(action == "1" or action == ""):
             print("\n{}\n\n".format(conf_file))
         except FileNotFoundError:
             color_error("Can't found the path.")
-
-    """Just print"""
     elif outtype == "4":
         print("\n\n" + conf_file + "\n\n")
-
-    """Clear & print"""
     elif outtype == "5":
         os.system('cls' if os.name == 'nt' else 'clear')
         print("\n\n" + conf_file + "\n\n")
-
     print("~~~ Goodbye ~~~")
     print("Leaving A2Gen version {} - https://github.com/outout14/a2gen".format(agenversion))
 print(conf_file)
